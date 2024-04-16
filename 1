@@ -1,0 +1,28 @@
+import unittest
+from game.buff import Buff
+
+class TestBuff(unittest.TestCase):
+    def test_crystals(self):
+        # Спершу створюю екземпляр класу Buff
+        buff = Buff()
+        
+        # Далі визначаю вхідні дані та очікуваний результат
+        health = 100
+        crystals_to_add = 50
+        expected_health = 150
+        
+        # Потім викликаю метод, який я хочу протестувати
+        buff.crystals(health, crystals_to_add)
+        
+        # І нарешті перевіряю, чи співпадає результат з очікуваним значенням
+        self.assertEqual(health, expected_health)
+
+if __name__ == '__main__':
+    unittest.main()
+Цей код допоможе вам перевірити, чи функція crystals правильно збільшує здоров'я гравця на відповідну кількість кристалів.
+
+
+
+
+
+
